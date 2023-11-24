@@ -1,0 +1,95 @@
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+body {
+  //   font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $overlay-color;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center horizontally
+  justify-content: center; // Center vertically
+  text-align: center; // Center text
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}
+.acceuil {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  position: fixed;
+  top: 18rem;
+  left: 20px;
+  font-size: 20px;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    top: 18rem;
+    left: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+.redDiamond {
+  position: fixed;
+  left: 20px;
+  top: 23rem;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(180, 0, 0);
+  transform: rotate(45deg);
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    top: 22rem;
+    width: 15px;
+    height: 15px;
+    left: 10px;
+  }
+}
+
+.title {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  position: fixed;
+  top: 20rem;
+  left: 20px;
+  font-size: 100px;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    top: 20rem;
+    left: 10px;
+    font-size: 60px;
+    white-space: nowrap;
+  }
+}
