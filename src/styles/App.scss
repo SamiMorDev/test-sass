@@ -48,13 +48,13 @@ body {
   font-family: "Trebuchet MS", Arial, sans-serif;
   position: fixed;
   top: 18rem;
-  left: 20px;
+  left: 25px;
   font-size: 20px;
   z-index: 2;
 
   @media screen and (max-width: 768px) {
     top: 18rem;
-    left: 10px;
+    left: 15px;
     font-size: 16px;
     white-space: nowrap;
   }
@@ -62,8 +62,8 @@ body {
 
 .redDiamond {
   position: fixed;
-  left: 20px;
-  top: 23rem;
+  left: 25px;
+  top: 22.5rem;
   width: 20px;
   height: 20px;
   background-color: rgb(180, 0, 0);
@@ -74,21 +74,21 @@ body {
     top: 22rem;
     width: 15px;
     height: 15px;
-    left: 10px;
+    left: 15px;
   }
 }
 
 .title {
   font-family: "Trebuchet MS", Arial, sans-serif;
   position: fixed;
-  top: 20rem;
-  left: 20px;
+  top: 18rem;
+  left: 25px;
   font-size: 100px;
   z-index: 2;
 
   @media screen and (max-width: 768px) {
     top: 20rem;
-    left: 10px;
+    left: 15px;
     font-size: 60px;
     white-space: nowrap;
   }
